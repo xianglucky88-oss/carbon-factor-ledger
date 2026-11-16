@@ -1,0 +1,20 @@
+{
+  "activities": [
+    {
+      "product": "P1",
+      "quantity": 10,
+      "unit": "kg",
+      "factor": 2.0,
+      "factor_id": "f1",
+      "valid": true
+    },
+    {
+      "product": "P1",
+      "quantity": 3,
+      "unit": "kg",
+      "factor": 1.5,
+      "factor_id": "f2",
+      "valid": false
+    }
+  ]
+}
