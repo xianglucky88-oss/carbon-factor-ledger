@@ -1,0 +1,51 @@
+{
+  "version": "factors-2026.11.0",
+  "schema": "factor-registry/v1",
+  "factors": [
+    {
+      "factor_id": "f1",
+      "factor": 2.0,
+      "unit": "kg",
+      "status": "active",
+      "valid_from": "2026-01-01",
+      "valid_to": "2026-12-31",
+      "source": "internal-meter-2026"
+    },
+    {
+      "factor_id": "f2",
+      "factor": 1.5,
+      "unit": "kg",
+      "status": "invalid",
+      "valid_from": "2025-01-01",
+      "valid_to": "2025-12-31",
+      "source": "withdrawn-database-2025"
+    },
+    {
+      "factor_id": "f3",
+      "factor": 0.5,
+      "unit": "kg",
+      "status": "active",
+      "valid_from": "2026-01-01",
+      "valid_to": "2026-12-31",
+      "source": "calibration-lab-2026"
+    },
+    {
+      "factor_id": "f4",
+      "factor": 3.0,
+      "unit": "kg",
+      "status": "active",
+      "valid_from": "2025-01-01",
+      "valid_to": "2026-06-30",
+      "source": "legacy-database-2025"
+    },
+    {
+      "factor_id": "f5",
+      "factor": 4.0,
+      "unit": "kg",
+      "status": "active",
+      "valid_from": "2026-11-01",
+      "valid_to": "2027-12-31",
+      "source": "procurement-2026-q4"
+    }
+  ]
+}

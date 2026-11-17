@@ -1,5 +1,14 @@
 [project]
 name = "carbon-factor-ledger"
 version = "0.1.0"
+description = "Offline, reproducible carbon footprint ledger with versioned factor, unit and evidence bindings."
 requires-python = ">=3.9"
 dependencies = []
+
+[project.scripts]
+carbon-factor-ledger = "carbon_factor_ledger.cli:main"
+
+[tool.carbon-factor-ledger]
+# Release process entry point (standard library only, run with python -I).
+release_builder = "scripts/build_release.py"
+release_commands = ["build", "verify", "rollback", "diff"]

@@ -7,6 +7,12 @@ __pycache__/
 .coverage
 htmlcov/
 
+# Release build outputs (staging, immutable releases, current symlink)
+/releases/
+releases/
+**/_work/
+*.stage-*
+
 # Environment files and local configuration
 .env
 .env.*

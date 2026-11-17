@@ -1,0 +1,25 @@
+{
+  "version": "evidence-2026.11.0",
+  "schema": "evidence-manifest/v1",
+  "base_dir": "evidence",
+  "files": [
+    {
+      "evidence_id": "E-100",
+      "path": "e100-meter.txt",
+      "sha256": "b52504162ba82faf483bffefe3c27fc6f10f1e67f3874145b9d325fecb4d4a3b",
+      "description": "Supplier meter reading backing factor f1"
+    },
+    {
+      "evidence_id": "E-200",
+      "path": "e200-certificate.txt",
+      "sha256": "521e47cf91dabc273edc7ed1e446dc5c229bdc542e40b2b863b2b8bcbac6d8fa",
+      "description": "Calibration certificate backing factor f3"
+    },
+    {
+      "evidence_id": "E-300",
+      "path": "e300-statement.txt",
+      "sha256": "98e1d74cd2b36642bc7726dbfbeedc0c8768d5d94580e2c3c9833d89af890c3f",
+      "description": "Procurement statement backing factor f5"
+    }
+  ]
+}

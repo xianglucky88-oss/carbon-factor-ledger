@@ -1,0 +1,4 @@
+Carbon Factor Ledger - evidence record E-100
+Supplier meter reading for factor f1 (electricity, kg CO2e per kg input).
+Billing period: 2026-01-01 through 2026-03-31.
+This fixture is static and carries no live data.

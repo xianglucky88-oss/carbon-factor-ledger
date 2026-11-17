@@ -1,0 +1,12 @@
+{
+  "evaluation_date": "2026-11-17",
+  "activities": [
+    {
+      "product": "P1",
+      "quantity": 10,
+      "unit": "kg",
+      "factor_id": "f1",
+      "evidence_id": "   "
+    }
+  ]
+}

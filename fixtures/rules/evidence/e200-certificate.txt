@@ -1,0 +1,3 @@
+Carbon Factor Ledger - evidence record E-200
+Calibration certificate backing factor f3 (unit conversion reference, tonnes).
+Issued: 2026-02-10. Static audit fixture.

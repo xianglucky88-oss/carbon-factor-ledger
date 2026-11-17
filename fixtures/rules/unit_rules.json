@@ -1,0 +1,11 @@
+{
+  "version": "units-2026.11.0",
+  "schema": "unit-rules/v1",
+  "base_unit": "kg",
+  "conversions": {
+    "kg": 1.0,
+    "g": 0.001,
+    "t": 1000.0,
+    "tonne": 1000.0
+  }
+}

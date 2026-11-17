@@ -1,20 +1,40 @@
 {
+  "evaluation_date": "2026-11-17",
   "activities": [
     {
       "product": "P1",
       "quantity": 10,
       "unit": "kg",
-      "factor": 2.0,
       "factor_id": "f1",
-      "valid": true
+      "evidence_id": "E-100"
     },
     {
       "product": "P1",
+      "quantity": 4,
+      "unit": "kg",
+      "factor_id": "f2",
+      "evidence_id": "E-100"
+    },
+    {
+      "product": "P2",
+      "quantity": 5000,
+      "unit": "g",
+      "factor_id": "f3",
+      "evidence_id": "E-200"
+    },
+    {
+      "product": "P3",
+      "quantity": 2,
+      "unit": "t",
+      "factor_id": "f4",
+      "evidence_id": "E-200"
+    },
+    {
+      "product": "P4",
       "quantity": 3,
       "unit": "kg",
-      "factor": 1.5,
-      "factor_id": "f2",
-      "valid": false
+      "factor_id": "f5",
+      "evidence_id": "E-300"
     }
   ]
 }

@@ -1,0 +1,3 @@
+Carbon Factor Ledger - evidence record E-300
+Procurement statement backing factor f5 (gas), registered 2026-11-01.
+Static audit fixture; effective for evaluation dates on or after that date.
