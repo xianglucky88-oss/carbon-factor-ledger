@@ -1,0 +1,107 @@
+{
+  "case": "zero_corpus",
+  "decimal": {
+    "evidence": {
+      "battery": [
+        "z1",
+        "z2"
+      ]
+    },
+    "excluded_factors": [
+      "z3"
+    ],
+    "footprints": {
+      "battery": "0.000"
+    },
+    "traces": [
+      {
+        "contribution": "0.0",
+        "excluded": false,
+        "factor": "2.0",
+        "factor_id": "z1",
+        "index": 0,
+        "product": "battery",
+        "quantity": "0",
+        "running_after": "0.000",
+        "running_before": "0",
+        "unit": "kg"
+      },
+      {
+        "contribution": "0.0",
+        "excluded": false,
+        "factor": "0.0",
+        "factor_id": "z2",
+        "index": 1,
+        "product": "battery",
+        "quantity": "0",
+        "running_after": "0.000",
+        "running_before": "0.000",
+        "unit": "kg"
+      },
+      {
+        "contribution": "0",
+        "excluded": true,
+        "factor": "99.0",
+        "factor_id": "z3",
+        "index": 2,
+        "product": "steel",
+        "quantity": "0",
+        "running_after": "0",
+        "running_before": "0",
+        "unit": "kg"
+      }
+    ]
+  },
+  "float_pair": {
+    "evidence": {
+      "battery": [
+        "z1",
+        "z2"
+      ]
+    },
+    "excluded_factors": [
+      "z3"
+    ],
+    "footprints": {
+      "battery": 0.0
+    },
+    "intermediates": [
+      {
+        "contribution": 0.0,
+        "excluded": false,
+        "index": 0,
+        "running_after": 0.0,
+        "running_before": 0.0
+      },
+      {
+        "contribution": 0.0,
+        "excluded": false,
+        "index": 1,
+        "running_after": 0.0,
+        "running_before": 0.0
+      },
+      {
+        "excluded": true,
+        "index": 2,
+        "running": 0.0
+      }
+    ]
+  },
+  "ledger": {
+    "evidence": {
+      "battery": [
+        "z1",
+        "z2"
+      ]
+    },
+    "excluded_factors": [
+      "z3"
+    ],
+    "footprints": {
+      "battery": 0.0
+    },
+    "project": "carbon-factor-ledger",
+    "status": "ok"
+  },
+  "n_activities": 3
+}

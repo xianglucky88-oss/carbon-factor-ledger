@@ -1,0 +1,337 @@
+{
+  "case": "generated_safe",
+  "decimal": {
+    "evidence": {
+      "battery": [
+        "f4",
+        "f6",
+        "f2",
+        "f6"
+      ],
+      "box": [
+        "f1"
+      ],
+      "fabric": [
+        "f3",
+        "f1"
+      ],
+      "grid-power": [
+        "f3"
+      ],
+      "steel": [
+        "f2"
+      ]
+    },
+    "excluded_factors": [
+      "f2",
+      "f6",
+      "f3"
+    ],
+    "footprints": {
+      "battery": "5.250",
+      "box": "2.500",
+      "fabric": "20.000",
+      "grid-power": "4.500",
+      "steel": "15.000"
+    },
+    "traces": [
+      {
+        "contribution": "0.00",
+        "excluded": false,
+        "factor": "0.0",
+        "factor_id": "f4",
+        "index": 0,
+        "product": "battery",
+        "quantity": "0.5",
+        "running_after": "0.000",
+        "running_before": "0",
+        "unit": "g"
+      },
+      {
+        "contribution": "1.50",
+        "excluded": false,
+        "factor": "1.0",
+        "factor_id": "f6",
+        "index": 1,
+        "product": "battery",
+        "quantity": "1.5",
+        "running_after": "1.500",
+        "running_before": "0.000",
+        "unit": "g"
+      },
+      {
+        "contribution": "0.0",
+        "excluded": false,
+        "factor": "1.0",
+        "factor_id": "f2",
+        "index": 2,
+        "product": "battery",
+        "quantity": "0",
+        "running_after": "1.500",
+        "running_before": "1.500",
+        "unit": "L"
+      },
+      {
+        "contribution": "2.5",
+        "excluded": false,
+        "factor": "0.5",
+        "factor_id": "f1",
+        "index": 3,
+        "product": "box",
+        "quantity": "5",
+        "running_after": "2.500",
+        "running_before": "0",
+        "unit": "kg"
+      },
+      {
+        "contribution": "5.0",
+        "excluded": false,
+        "factor": "1.0",
+        "factor_id": "f3",
+        "index": 4,
+        "product": "fabric",
+        "quantity": "5",
+        "running_after": "5.000",
+        "running_before": "0",
+        "unit": "kWh"
+      },
+      {
+        "contribution": "15.0",
+        "excluded": false,
+        "factor": "3.0",
+        "factor_id": "f2",
+        "index": 5,
+        "product": "steel",
+        "quantity": "5",
+        "running_after": "15.000",
+        "running_before": "0",
+        "unit": "kWh"
+      },
+      {
+        "contribution": "0",
+        "excluded": true,
+        "factor": "1.0",
+        "factor_id": "f2",
+        "index": 6,
+        "product": "steel",
+        "quantity": "25",
+        "running_after": "15.000",
+        "running_before": "15.000",
+        "unit": "g"
+      },
+      {
+        "contribution": "3.75",
+        "excluded": false,
+        "factor": "2.5",
+        "factor_id": "f6",
+        "index": 7,
+        "product": "battery",
+        "quantity": "1.5",
+        "running_after": "5.250",
+        "running_before": "1.500",
+        "unit": "g"
+      },
+      {
+        "contribution": "0",
+        "excluded": true,
+        "factor": "2.0",
+        "factor_id": "f6",
+        "index": 8,
+        "product": "fabric",
+        "quantity": "5",
+        "running_after": "5.000",
+        "running_before": "5.000",
+        "unit": "g"
+      },
+      {
+        "contribution": "0",
+        "excluded": true,
+        "factor": "2.0",
+        "factor_id": "f3",
+        "index": 9,
+        "product": "fabric",
+        "quantity": "25",
+        "running_after": "5.000",
+        "running_before": "5.000",
+        "unit": "L"
+      },
+      {
+        "contribution": "15.0",
+        "excluded": false,
+        "factor": "3.0",
+        "factor_id": "f1",
+        "index": 10,
+        "product": "fabric",
+        "quantity": "5",
+        "running_after": "20.000",
+        "running_before": "5.000",
+        "unit": "t"
+      },
+      {
+        "contribution": "4.50",
+        "excluded": false,
+        "factor": "3.0",
+        "factor_id": "f3",
+        "index": 11,
+        "product": "grid-power",
+        "quantity": "1.5",
+        "running_after": "4.500",
+        "running_before": "0",
+        "unit": "kg"
+      }
+    ]
+  },
+  "float_pair": {
+    "evidence": {
+      "battery": [
+        "f4",
+        "f6",
+        "f2",
+        "f6"
+      ],
+      "box": [
+        "f1"
+      ],
+      "fabric": [
+        "f3",
+        "f1"
+      ],
+      "grid-power": [
+        "f3"
+      ],
+      "steel": [
+        "f2"
+      ]
+    },
+    "excluded_factors": [
+      "f2",
+      "f6",
+      "f3"
+    ],
+    "footprints": {
+      "battery": 5.25,
+      "box": 2.5,
+      "fabric": 20.0,
+      "grid-power": 4.5,
+      "steel": 15.0
+    },
+    "intermediates": [
+      {
+        "contribution": 0.0,
+        "excluded": false,
+        "index": 0,
+        "running_after": 0.0,
+        "running_before": 0.0
+      },
+      {
+        "contribution": 1.5,
+        "excluded": false,
+        "index": 1,
+        "running_after": 1.5,
+        "running_before": 0.0
+      },
+      {
+        "contribution": 0.0,
+        "excluded": false,
+        "index": 2,
+        "running_after": 1.5,
+        "running_before": 1.5
+      },
+      {
+        "contribution": 2.5,
+        "excluded": false,
+        "index": 3,
+        "running_after": 2.5,
+        "running_before": 0.0
+      },
+      {
+        "contribution": 5.0,
+        "excluded": false,
+        "index": 4,
+        "running_after": 5.0,
+        "running_before": 0.0
+      },
+      {
+        "contribution": 15.0,
+        "excluded": false,
+        "index": 5,
+        "running_after": 15.0,
+        "running_before": 0.0
+      },
+      {
+        "excluded": true,
+        "index": 6,
+        "running": 15.0
+      },
+      {
+        "contribution": 3.75,
+        "excluded": false,
+        "index": 7,
+        "running_after": 5.25,
+        "running_before": 1.5
+      },
+      {
+        "excluded": true,
+        "index": 8,
+        "running": 5.0
+      },
+      {
+        "excluded": true,
+        "index": 9,
+        "running": 5.0
+      },
+      {
+        "contribution": 15.0,
+        "excluded": false,
+        "index": 10,
+        "running_after": 20.0,
+        "running_before": 5.0
+      },
+      {
+        "contribution": 4.5,
+        "excluded": false,
+        "index": 11,
+        "running_after": 4.5,
+        "running_before": 0.0
+      }
+    ]
+  },
+  "ledger": {
+    "evidence": {
+      "battery": [
+        "f4",
+        "f6",
+        "f2",
+        "f6"
+      ],
+      "box": [
+        "f1"
+      ],
+      "fabric": [
+        "f3",
+        "f1"
+      ],
+      "grid-power": [
+        "f3"
+      ],
+      "steel": [
+        "f2"
+      ]
+    },
+    "excluded_factors": [
+      "f2",
+      "f6",
+      "f3"
+    ],
+    "footprints": {
+      "battery": 5.25,
+      "box": 2.5,
+      "fabric": 20.0,
+      "grid-power": 4.5,
+      "steel": 15.0
+    },
+    "project": "carbon-factor-ledger",
+    "status": "ok"
+  },
+  "n_activities": 12
+}

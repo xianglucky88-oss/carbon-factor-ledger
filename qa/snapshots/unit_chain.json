@@ -1,0 +1,115 @@
+{
+  "case": "unit_chain",
+  "decimal": {
+    "evidence": {
+      "battery": [
+        "u1",
+        "u2"
+      ],
+      "steel": [
+        "u3"
+      ]
+    },
+    "excluded_factors": [],
+    "footprints": {
+      "battery": "14.000",
+      "steel": "9.000"
+    },
+    "traces": [
+      {
+        "contribution": "8.0",
+        "excluded": false,
+        "factor": "2.0",
+        "factor_id": "u1",
+        "index": 0,
+        "product": "battery",
+        "quantity": "4",
+        "running_after": "8.000",
+        "running_before": "0",
+        "unit": "kg"
+      },
+      {
+        "contribution": "6.0",
+        "excluded": false,
+        "factor": "1.0",
+        "factor_id": "u2",
+        "index": 1,
+        "product": "battery",
+        "quantity": "6",
+        "running_after": "14.000",
+        "running_before": "8.000",
+        "unit": "g"
+      },
+      {
+        "contribution": "9.0",
+        "excluded": false,
+        "factor": "3.0",
+        "factor_id": "u3",
+        "index": 2,
+        "product": "steel",
+        "quantity": "3",
+        "running_after": "9.000",
+        "running_before": "0",
+        "unit": "t"
+      }
+    ]
+  },
+  "float_pair": {
+    "evidence": {
+      "battery": [
+        "u1",
+        "u2"
+      ],
+      "steel": [
+        "u3"
+      ]
+    },
+    "excluded_factors": [],
+    "footprints": {
+      "battery": 14.0,
+      "steel": 9.0
+    },
+    "intermediates": [
+      {
+        "contribution": 8.0,
+        "excluded": false,
+        "index": 0,
+        "running_after": 8.0,
+        "running_before": 0.0
+      },
+      {
+        "contribution": 6.0,
+        "excluded": false,
+        "index": 1,
+        "running_after": 14.0,
+        "running_before": 8.0
+      },
+      {
+        "contribution": 9.0,
+        "excluded": false,
+        "index": 2,
+        "running_after": 9.0,
+        "running_before": 0.0
+      }
+    ]
+  },
+  "ledger": {
+    "evidence": {
+      "battery": [
+        "u1",
+        "u2"
+      ],
+      "steel": [
+        "u3"
+      ]
+    },
+    "excluded_factors": [],
+    "footprints": {
+      "battery": 14.0,
+      "steel": 9.0
+    },
+    "project": "carbon-factor-ledger",
+    "status": "ok"
+  },
+  "n_activities": 3
+}

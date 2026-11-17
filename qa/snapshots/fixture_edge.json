@@ -1,0 +1,427 @@
+{
+  "case": "fixture_edge",
+  "decimal": {
+    "evidence": {
+      "battery": [
+        "zero-qty",
+        "f1",
+        "round-a",
+        "round-b",
+        "round-c",
+        "pre-round-killer",
+        "negative",
+        "f1"
+      ],
+      "box": [
+        "f5"
+      ],
+      "fabric": [
+        "float-boundary",
+        "zero-2"
+      ],
+      "grid-power": [
+        "f4"
+      ],
+      "steel": [
+        "f3",
+        "f3"
+      ]
+    },
+    "excluded_factors": [
+      "f2",
+      "f5"
+    ],
+    "footprints": {
+      "battery": "19.504",
+      "box": "6.250",
+      "fabric": "1.112",
+      "grid-power": "4.000",
+      "steel": "12.000"
+    },
+    "traces": [
+      {
+        "contribution": "0.0",
+        "excluded": false,
+        "factor": "2.0",
+        "factor_id": "zero-qty",
+        "index": 0,
+        "product": "battery",
+        "quantity": "0",
+        "running_after": "0.000",
+        "running_before": "0",
+        "unit": "kg"
+      },
+      {
+        "contribution": "20.0",
+        "excluded": false,
+        "factor": "2.0",
+        "factor_id": "f1",
+        "index": 1,
+        "product": "battery",
+        "quantity": "10",
+        "running_after": "20.000",
+        "running_before": "0.000",
+        "unit": "kg"
+      },
+      {
+        "contribution": "0",
+        "excluded": true,
+        "factor": "1.5",
+        "factor_id": "f2",
+        "index": 2,
+        "product": "battery",
+        "quantity": "3",
+        "running_after": "20.000",
+        "running_before": "20.000",
+        "unit": "kg"
+      },
+      {
+        "contribution": "0.00070",
+        "excluded": false,
+        "factor": "1.0",
+        "factor_id": "round-a",
+        "index": 3,
+        "product": "battery",
+        "quantity": "0.0007",
+        "running_after": "20.001",
+        "running_before": "20.000",
+        "unit": "kg"
+      },
+      {
+        "contribution": "0.00070",
+        "excluded": false,
+        "factor": "1.0",
+        "factor_id": "round-b",
+        "index": 4,
+        "product": "battery",
+        "quantity": "0.0007",
+        "running_after": "20.002",
+        "running_before": "20.001",
+        "unit": "kg"
+      },
+      {
+        "contribution": "0.00070",
+        "excluded": false,
+        "factor": "1.0",
+        "factor_id": "round-c",
+        "index": 5,
+        "product": "battery",
+        "quantity": "0.0007",
+        "running_after": "20.003",
+        "running_before": "20.002",
+        "unit": "kg"
+      },
+      {
+        "contribution": "2.50100",
+        "excluded": false,
+        "factor": "2.5",
+        "factor_id": "pre-round-killer",
+        "index": 6,
+        "product": "battery",
+        "quantity": "1.0004",
+        "running_after": "22.504",
+        "running_before": "20.003",
+        "unit": "kg"
+      },
+      {
+        "contribution": "-6.0",
+        "excluded": false,
+        "factor": "1.5",
+        "factor_id": "negative",
+        "index": 7,
+        "product": "battery",
+        "quantity": "-4",
+        "running_after": "16.504",
+        "running_before": "22.504",
+        "unit": "kg"
+      },
+      {
+        "contribution": "3.0",
+        "excluded": false,
+        "factor": "1.5",
+        "factor_id": "f1",
+        "index": 8,
+        "product": "battery",
+        "quantity": "2",
+        "running_after": "19.504",
+        "running_before": "16.504",
+        "unit": "kg"
+      },
+      {
+        "contribution": "18.0",
+        "excluded": false,
+        "factor": "3.0",
+        "factor_id": "f3",
+        "index": 9,
+        "product": "steel",
+        "quantity": "6",
+        "running_after": "18.000",
+        "running_before": "0",
+        "unit": "t"
+      },
+      {
+        "contribution": "-6.0",
+        "excluded": false,
+        "factor": "3.0",
+        "factor_id": "f3",
+        "index": 10,
+        "product": "steel",
+        "quantity": "-2",
+        "running_after": "12.000",
+        "running_before": "18.000",
+        "unit": "kg"
+      },
+      {
+        "contribution": "1.11150",
+        "excluded": false,
+        "factor": "1.0",
+        "factor_id": "float-boundary",
+        "index": 11,
+        "product": "fabric",
+        "quantity": "1.1115",
+        "running_after": "1.112",
+        "running_before": "0",
+        "unit": "kg"
+      },
+      {
+        "contribution": "0.0",
+        "excluded": false,
+        "factor": "9.9",
+        "factor_id": "zero-2",
+        "index": 12,
+        "product": "fabric",
+        "quantity": "0",
+        "running_after": "1.112",
+        "running_before": "1.112",
+        "unit": "kg"
+      },
+      {
+        "contribution": "4.0",
+        "excluded": false,
+        "factor": "0.5",
+        "factor_id": "f4",
+        "index": 13,
+        "product": "grid-power",
+        "quantity": "8",
+        "running_after": "4.000",
+        "running_before": "0",
+        "unit": "kWh"
+      },
+      {
+        "contribution": "0",
+        "excluded": true,
+        "factor": "1.25",
+        "factor_id": "f5",
+        "index": 14,
+        "product": "box",
+        "quantity": "5",
+        "running_after": "0",
+        "running_before": "0",
+        "unit": "kg"
+      },
+      {
+        "contribution": "6.25",
+        "excluded": false,
+        "factor": "1.25",
+        "factor_id": "f5",
+        "index": 15,
+        "product": "box",
+        "quantity": "5",
+        "running_after": "6.250",
+        "running_before": "0",
+        "unit": "kg"
+      }
+    ]
+  },
+  "float_pair": {
+    "evidence": {
+      "battery": [
+        "zero-qty",
+        "f1",
+        "round-a",
+        "round-b",
+        "round-c",
+        "pre-round-killer",
+        "negative",
+        "f1"
+      ],
+      "box": [
+        "f5"
+      ],
+      "fabric": [
+        "float-boundary",
+        "zero-2"
+      ],
+      "grid-power": [
+        "f4"
+      ],
+      "steel": [
+        "f3",
+        "f3"
+      ]
+    },
+    "excluded_factors": [
+      "f2",
+      "f5"
+    ],
+    "footprints": {
+      "battery": 19.504,
+      "box": 6.25,
+      "fabric": 1.111,
+      "grid-power": 4.0,
+      "steel": 12.0
+    },
+    "intermediates": [
+      {
+        "contribution": 0.0,
+        "excluded": false,
+        "index": 0,
+        "running_after": 0.0,
+        "running_before": 0.0
+      },
+      {
+        "contribution": 20.0,
+        "excluded": false,
+        "index": 1,
+        "running_after": 20.0,
+        "running_before": 0.0
+      },
+      {
+        "excluded": true,
+        "index": 2,
+        "running": 20.0
+      },
+      {
+        "contribution": 0.0007,
+        "excluded": false,
+        "index": 3,
+        "running_after": 20.001,
+        "running_before": 20.0
+      },
+      {
+        "contribution": 0.0007,
+        "excluded": false,
+        "index": 4,
+        "running_after": 20.002,
+        "running_before": 20.001
+      },
+      {
+        "contribution": 0.0007,
+        "excluded": false,
+        "index": 5,
+        "running_after": 20.003,
+        "running_before": 20.002
+      },
+      {
+        "contribution": 2.501,
+        "excluded": false,
+        "index": 6,
+        "running_after": 22.504,
+        "running_before": 20.003
+      },
+      {
+        "contribution": -6.0,
+        "excluded": false,
+        "index": 7,
+        "running_after": 16.504,
+        "running_before": 22.504
+      },
+      {
+        "contribution": 3.0,
+        "excluded": false,
+        "index": 8,
+        "running_after": 19.504,
+        "running_before": 16.504
+      },
+      {
+        "contribution": 18.0,
+        "excluded": false,
+        "index": 9,
+        "running_after": 18.0,
+        "running_before": 0.0
+      },
+      {
+        "contribution": -6.0,
+        "excluded": false,
+        "index": 10,
+        "running_after": 12.0,
+        "running_before": 18.0
+      },
+      {
+        "contribution": 1.1115,
+        "excluded": false,
+        "index": 11,
+        "running_after": 1.111,
+        "running_before": 0.0
+      },
+      {
+        "contribution": 0.0,
+        "excluded": false,
+        "index": 12,
+        "running_after": 1.111,
+        "running_before": 1.111
+      },
+      {
+        "contribution": 4.0,
+        "excluded": false,
+        "index": 13,
+        "running_after": 4.0,
+        "running_before": 0.0
+      },
+      {
+        "excluded": true,
+        "index": 14,
+        "running": 0.0
+      },
+      {
+        "contribution": 6.25,
+        "excluded": false,
+        "index": 15,
+        "running_after": 6.25,
+        "running_before": 0.0
+      }
+    ]
+  },
+  "ledger": {
+    "evidence": {
+      "battery": [
+        "zero-qty",
+        "f1",
+        "round-a",
+        "round-b",
+        "round-c",
+        "pre-round-killer",
+        "negative",
+        "f1"
+      ],
+      "box": [
+        "f5"
+      ],
+      "fabric": [
+        "float-boundary",
+        "zero-2"
+      ],
+      "grid-power": [
+        "f4"
+      ],
+      "steel": [
+        "f3",
+        "f3"
+      ]
+    },
+    "excluded_factors": [
+      "f2",
+      "f5"
+    ],
+    "footprints": {
+      "battery": 19.504,
+      "box": 6.25,
+      "fabric": 1.111,
+      "grid-power": 4.0,
+      "steel": 12.0
+    },
+    "project": "carbon-factor-ledger",
+    "status": "ok"
+  },
+  "n_activities": 16
+}

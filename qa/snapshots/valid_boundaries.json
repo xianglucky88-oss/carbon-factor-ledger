@@ -1,0 +1,211 @@
+{
+  "case": "valid_boundaries",
+  "decimal": {
+    "evidence": {
+      "P": [
+        "missing",
+        "true",
+        "one",
+        "nonempty-str"
+      ]
+    },
+    "excluded_factors": [
+      "false",
+      "none",
+      "zero",
+      "empty-str"
+    ],
+    "footprints": {
+      "P": "16.000"
+    },
+    "traces": [
+      {
+        "contribution": "4.0",
+        "excluded": false,
+        "factor": "2.0",
+        "factor_id": "missing",
+        "index": 0,
+        "product": "P",
+        "quantity": "2",
+        "running_after": "4.000",
+        "running_before": "0",
+        "unit": "kg"
+      },
+      {
+        "contribution": "4.0",
+        "excluded": false,
+        "factor": "2.0",
+        "factor_id": "true",
+        "index": 1,
+        "product": "P",
+        "quantity": "2",
+        "running_after": "8.000",
+        "running_before": "4.000",
+        "unit": "kg"
+      },
+      {
+        "contribution": "0",
+        "excluded": true,
+        "factor": "2.0",
+        "factor_id": "false",
+        "index": 2,
+        "product": "P",
+        "quantity": "2",
+        "running_after": "8.000",
+        "running_before": "8.000",
+        "unit": "kg"
+      },
+      {
+        "contribution": "0",
+        "excluded": true,
+        "factor": "2.0",
+        "factor_id": "none",
+        "index": 3,
+        "product": "P",
+        "quantity": "2",
+        "running_after": "8.000",
+        "running_before": "8.000",
+        "unit": "kg"
+      },
+      {
+        "contribution": "0",
+        "excluded": true,
+        "factor": "2.0",
+        "factor_id": "zero",
+        "index": 4,
+        "product": "P",
+        "quantity": "2",
+        "running_after": "8.000",
+        "running_before": "8.000",
+        "unit": "kg"
+      },
+      {
+        "contribution": "4.0",
+        "excluded": false,
+        "factor": "2.0",
+        "factor_id": "one",
+        "index": 5,
+        "product": "P",
+        "quantity": "2",
+        "running_after": "12.000",
+        "running_before": "8.000",
+        "unit": "kg"
+      },
+      {
+        "contribution": "0",
+        "excluded": true,
+        "factor": "2.0",
+        "factor_id": "empty-str",
+        "index": 6,
+        "product": "P",
+        "quantity": "2",
+        "running_after": "12.000",
+        "running_before": "12.000",
+        "unit": "kg"
+      },
+      {
+        "contribution": "4.0",
+        "excluded": false,
+        "factor": "2.0",
+        "factor_id": "nonempty-str",
+        "index": 7,
+        "product": "P",
+        "quantity": "2",
+        "running_after": "16.000",
+        "running_before": "12.000",
+        "unit": "kg"
+      }
+    ]
+  },
+  "float_pair": {
+    "evidence": {
+      "P": [
+        "missing",
+        "true",
+        "one",
+        "nonempty-str"
+      ]
+    },
+    "excluded_factors": [
+      "false",
+      "none",
+      "zero",
+      "empty-str"
+    ],
+    "footprints": {
+      "P": 16.0
+    },
+    "intermediates": [
+      {
+        "contribution": 4.0,
+        "excluded": false,
+        "index": 0,
+        "running_after": 4.0,
+        "running_before": 0.0
+      },
+      {
+        "contribution": 4.0,
+        "excluded": false,
+        "index": 1,
+        "running_after": 8.0,
+        "running_before": 4.0
+      },
+      {
+        "excluded": true,
+        "index": 2,
+        "running": 8.0
+      },
+      {
+        "excluded": true,
+        "index": 3,
+        "running": 8.0
+      },
+      {
+        "excluded": true,
+        "index": 4,
+        "running": 8.0
+      },
+      {
+        "contribution": 4.0,
+        "excluded": false,
+        "index": 5,
+        "running_after": 12.0,
+        "running_before": 8.0
+      },
+      {
+        "excluded": true,
+        "index": 6,
+        "running": 12.0
+      },
+      {
+        "contribution": 4.0,
+        "excluded": false,
+        "index": 7,
+        "running_after": 16.0,
+        "running_before": 12.0
+      }
+    ]
+  },
+  "ledger": {
+    "evidence": {
+      "P": [
+        "missing",
+        "true",
+        "one",
+        "nonempty-str"
+      ]
+    },
+    "excluded_factors": [
+      "false",
+      "none",
+      "zero",
+      "empty-str"
+    ],
+    "footprints": {
+      "P": 16.0
+    },
+    "project": "carbon-factor-ledger",
+    "status": "ok"
+  },
+  "n_activities": 8
+}

@@ -1,0 +1,137 @@
+{
+  "case": "decimal_strings",
+  "decimal": {
+    "evidence": {
+      "battery": [
+        "d1",
+        "d2",
+        "d3"
+      ],
+      "steel": [
+        "d4"
+      ]
+    },
+    "excluded_factors": [],
+    "footprints": {
+      "battery": "21.132",
+      "steel": "8.332"
+    },
+    "traces": [
+      {
+        "contribution": "20.0",
+        "excluded": false,
+        "factor": "2.0",
+        "factor_id": "d1",
+        "index": 0,
+        "product": "battery",
+        "quantity": "10",
+        "running_after": "20.000",
+        "running_before": "0",
+        "unit": "kg"
+      },
+      {
+        "contribution": "0.02",
+        "excluded": false,
+        "factor": "0.2",
+        "factor_id": "d2",
+        "index": 1,
+        "product": "battery",
+        "quantity": "0.1",
+        "running_after": "20.020",
+        "running_before": "20.000",
+        "unit": "kg"
+      },
+      {
+        "contribution": "1.1115",
+        "excluded": false,
+        "factor": "1",
+        "factor_id": "d3",
+        "index": 2,
+        "product": "battery",
+        "quantity": "1.1115",
+        "running_after": "21.132",
+        "running_before": "20.020",
+        "unit": "kg"
+      },
+      {
+        "contribution": "8.3325",
+        "excluded": false,
+        "factor": "2.5",
+        "factor_id": "d4",
+        "index": 3,
+        "product": "steel",
+        "quantity": "3.333",
+        "running_after": "8.332",
+        "running_before": "0",
+        "unit": "kg"
+      }
+    ]
+  },
+  "float_pair": {
+    "evidence": {
+      "battery": [
+        "d1",
+        "d2",
+        "d3"
+      ],
+      "steel": [
+        "d4"
+      ]
+    },
+    "excluded_factors": [],
+    "footprints": {
+      "battery": 21.131,
+      "steel": 8.332
+    },
+    "intermediates": [
+      {
+        "contribution": 20.0,
+        "excluded": false,
+        "index": 0,
+        "running_after": 20.0,
+        "running_before": 0.0
+      },
+      {
+        "contribution": 0.020000000000000004,
+        "excluded": false,
+        "index": 1,
+        "running_after": 20.02,
+        "running_before": 20.0
+      },
+      {
+        "contribution": 1.1115,
+        "excluded": false,
+        "index": 2,
+        "running_after": 21.131,
+        "running_before": 20.02
+      },
+      {
+        "contribution": 8.3325,
+        "excluded": false,
+        "index": 3,
+        "running_after": 8.332,
+        "running_before": 0.0
+      }
+    ]
+  },
+  "ledger": {
+    "evidence": {
+      "battery": [
+        "d1",
+        "d2",
+        "d3"
+      ],
+      "steel": [
+        "d4"
+      ]
+    },
+    "excluded_factors": [],
+    "footprints": {
+      "battery": 21.131,
+      "steel": 8.332
+    },
+    "project": "carbon-factor-ledger",
+    "status": "ok"
+  },
+  "n_activities": 4
+}

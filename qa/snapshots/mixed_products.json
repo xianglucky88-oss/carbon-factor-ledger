@@ -1,0 +1,191 @@
+{
+  "case": "mixed_products",
+  "decimal": {
+    "evidence": {
+      "battery": [
+        "battery-0",
+        "battery-5"
+      ],
+      "fabric": [
+        "fabric-3"
+      ],
+      "steel": [
+        "steel-1",
+        "steel-4"
+      ]
+    },
+    "excluded_factors": [
+      "battery-2"
+    ],
+    "footprints": {
+      "battery": "14.000",
+      "fabric": "2.500",
+      "steel": "7.500"
+    },
+    "traces": [
+      {
+        "contribution": "20.0",
+        "excluded": false,
+        "factor": "2.0",
+        "factor_id": "battery-0",
+        "index": 0,
+        "product": "battery",
+        "quantity": "10",
+        "running_after": "20.000",
+        "running_before": "0",
+        "unit": "kg"
+      },
+      {
+        "contribution": "6.0",
+        "excluded": false,
+        "factor": "1.5",
+        "factor_id": "steel-1",
+        "index": 1,
+        "product": "steel",
+        "quantity": "4",
+        "running_after": "6.000",
+        "running_before": "0",
+        "unit": "t"
+      },
+      {
+        "contribution": "0",
+        "excluded": true,
+        "factor": "2.0",
+        "factor_id": "battery-2",
+        "index": 2,
+        "product": "battery",
+        "quantity": "2",
+        "running_after": "20.000",
+        "running_before": "20.000",
+        "unit": "kg"
+      },
+      {
+        "contribution": "2.5",
+        "excluded": false,
+        "factor": "0.5",
+        "factor_id": "fabric-3",
+        "index": 3,
+        "product": "fabric",
+        "quantity": "5",
+        "running_after": "2.500",
+        "running_before": "0",
+        "unit": "m"
+      },
+      {
+        "contribution": "1.5",
+        "excluded": false,
+        "factor": "1.5",
+        "factor_id": "steel-4",
+        "index": 4,
+        "product": "steel",
+        "quantity": "1",
+        "running_after": "7.500",
+        "running_before": "6.000",
+        "unit": "t"
+      },
+      {
+        "contribution": "-6.0",
+        "excluded": false,
+        "factor": "2.0",
+        "factor_id": "battery-5",
+        "index": 5,
+        "product": "battery",
+        "quantity": "-3",
+        "running_after": "14.000",
+        "running_before": "20.000",
+        "unit": "kg"
+      }
+    ]
+  },
+  "float_pair": {
+    "evidence": {
+      "battery": [
+        "battery-0",
+        "battery-5"
+      ],
+      "fabric": [
+        "fabric-3"
+      ],
+      "steel": [
+        "steel-1",
+        "steel-4"
+      ]
+    },
+    "excluded_factors": [
+      "battery-2"
+    ],
+    "footprints": {
+      "battery": 14.0,
+      "fabric": 2.5,
+      "steel": 7.5
+    },
+    "intermediates": [
+      {
+        "contribution": 20.0,
+        "excluded": false,
+        "index": 0,
+        "running_after": 20.0,
+        "running_before": 0.0
+      },
+      {
+        "contribution": 6.0,
+        "excluded": false,
+        "index": 1,
+        "running_after": 6.0,
+        "running_before": 0.0
+      },
+      {
+        "excluded": true,
+        "index": 2,
+        "running": 20.0
+      },
+      {
+        "contribution": 2.5,
+        "excluded": false,
+        "index": 3,
+        "running_after": 2.5,
+        "running_before": 0.0
+      },
+      {
+        "contribution": 1.5,
+        "excluded": false,
+        "index": 4,
+        "running_after": 7.5,
+        "running_before": 6.0
+      },
+      {
+        "contribution": -6.0,
+        "excluded": false,
+        "index": 5,
+        "running_after": 14.0,
+        "running_before": 20.0
+      }
+    ]
+  },
+  "ledger": {
+    "evidence": {
+      "battery": [
+        "battery-0",
+        "battery-5"
+      ],
+      "fabric": [
+        "fabric-3"
+      ],
+      "steel": [
+        "steel-1",
+        "steel-4"
+      ]
+    },
+    "excluded_factors": [
+      "battery-2"
+    ],
+    "footprints": {
+      "battery": 14.0,
+      "fabric": 2.5,
+      "steel": 7.5
+    },
+    "project": "carbon-factor-ledger",
+    "status": "ok"
+  },
+  "n_activities": 6
+}
