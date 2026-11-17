@@ -1,20 +1,243 @@
 {
-  "activities": [
+  "scenario": "combined: unit conversion, expiry, withdrawal propagation, boundary mismatch, evidence gap, hash drift",
+  "events": [
     {
-      "product": "P1",
-      "quantity": 10,
-      "unit": "kg",
-      "factor": 2.0,
-      "factor_id": "f1",
-      "valid": true
+      "event_type": "consumption_recorded",
+      "timestamp": "2026-01-15T09:12:00+00:00",
+      "payload": {
+        "record_id": "R2", "product": "P1", "material": "aluminium",
+        "activity": "material_input", "quantity": 500, "unit": "kg",
+        "geography": "CN", "boundary": "CRADLE_TO_GATE",
+        "occurred_on": "2026-02-10", "factor_id": "F-ALU"
+      }
     },
     {
-      "product": "P1",
-      "quantity": 3,
-      "unit": "kg",
-      "factor": 1.5,
-      "factor_id": "f2",
-      "valid": false
+      "event_type": "evidence_registered",
+      "timestamp": "2025-01-01T00:00:00+00:00",
+      "payload": {
+        "evidence_id": "EV-STEEL-1", "filename": "steel_ecoinvent_v1.pdf",
+        "sha256": "1111111111111111111111111111111111111111111111111111111111111111"
+      }
+    },
+    {
+      "event_type": "consumption_recorded",
+      "timestamp": "2026-01-15T09:01:00+00:00",
+      "payload": {
+        "record_id": "R1", "product": "P1", "material": "steel",
+        "activity": "material_input", "quantity": 2, "unit": "t",
+        "geography": "CN", "boundary": "CRADLE_TO_GATE",
+        "occurred_on": "2026-01-20", "factor_id": "F-STEEL"
+      }
+    },
+    {
+      "event_type": "evidence_registered",
+      "timestamp": "2025-01-01T00:01:00+00:00",
+      "payload": {
+        "evidence_id": "EV-ALU-1", "filename": "aluminium_eea_2025.pdf",
+        "sha256": "2222222222222222222222222222222222222222222222222222222222222222"
+      }
+    },
+    {
+      "event_type": "factor_version_registered",
+      "timestamp": "2025-01-02T00:00:00+00:00",
+      "payload": {
+        "factor_id": "F-STEEL", "version": 1, "activity": "material_input",
+        "material": "steel", "factor_value": 2.0, "factor_unit": "kgCO2e/kg",
+        "geography": "CN", "boundary": "CRADLE_TO_GATE",
+        "valid_from": "2025-01-01", "valid_to": "2026-06-30",
+        "evidence_id": "EV-STEEL-1"
+      }
+    },
+    {
+      "event_type": "factor_version_registered",
+      "timestamp": "2025-01-02T00:01:00+00:00",
+      "payload": {
+        "factor_id": "F-ALU", "version": 1, "activity": "material_input",
+        "material": "aluminium", "factor_value": 8.0, "factor_unit": "kgCO2e/kg",
+        "geography": "GLOBAL", "boundary": "CRADLE_TO_GATE",
+        "valid_from": "2025-01-01", "valid_to": null,
+        "evidence_id": "EV-ALU-1"
+      }
+    },
+    {
+      "event_type": "factor_version_registered",
+      "timestamp": "2026-06-01T00:00:00+00:00",
+      "payload": {
+        "factor_id": "F-STEEL", "version": 2, "activity": "material_input",
+        "material": "steel", "factor_value": 1.9, "factor_unit": "kgCO2e/kg",
+        "geography": "CN", "boundary": "CRADLE_TO_GATE",
+        "valid_from": "2026-07-01", "valid_to": null,
+        "evidence_id": "EV-STEEL-1", "supersedes": 1
+      }
+    },
+    {
+      "event_type": "consumption_recorded",
+      "timestamp": "2026-01-15T09:03:00+00:00",
+      "payload": {
+        "record_id": "R3", "product": "P1", "material": "freight",
+        "activity": "road_freight", "quantity": 10000, "unit": "kgkm",
+        "geography": "CN", "boundary": "TRANSPORT",
+        "occurred_on": "2026-03-05", "factor_id": "F-TRUCK"
+      }
+    },
+    {
+      "event_type": "evidence_registered",
+      "timestamp": "2025-01-01T00:02:00+00:00",
+      "payload": {
+        "evidence_id": "EV-TRUCK-1", "filename": "road_freight_greet.pdf",
+        "sha256": "3333333333333333333333333333333333333333333333333333333333333333"
+      }
+    },
+    {
+      "event_type": "factor_version_registered",
+      "timestamp": "2025-01-02T00:02:00+00:00",
+      "payload": {
+        "factor_id": "F-TRUCK", "version": 1, "activity": "road_freight",
+        "material": "freight", "factor_value": 0.05, "factor_unit": "kgCO2e/tkm",
+        "geography": "CN", "boundary": "TRANSPORT",
+        "valid_from": "2025-01-01", "valid_to": null,
+        "evidence_id": "EV-TRUCK-1"
+      }
+    },
+    {
+      "event_type": "consumption_recorded",
+      "timestamp": "2026-01-15T09:04:00+00:00",
+      "payload": {
+        "record_id": "R4", "product": "P1", "material": "electricity",
+        "activity": "energy_use", "quantity": 500, "unit": "kWh",
+        "geography": "EU", "boundary": "ENERGY",
+        "occurred_on": "2026-03-10", "factor_id": "F-GRID"
+      }
+    },
+    {
+      "event_type": "evidence_registered",
+      "timestamp": "2025-01-01T00:03:00+00:00",
+      "payload": {
+        "evidence_id": "EV-GRID-1", "filename": "grid_cn_2026.pdf",
+        "sha256": "4444444444444444444444444444444444444444444444444444444444444444"
+      }
+    },
+    {
+      "event_type": "factor_version_registered",
+      "timestamp": "2025-01-02T00:03:00+00:00",
+      "payload": {
+        "factor_id": "F-GRID", "version": 1, "activity": "energy_use",
+        "material": "electricity", "factor_value": 0.55, "factor_unit": "kgCO2e/kWh",
+        "geography": "CN", "boundary": "ENERGY",
+        "valid_from": "2026-01-01", "valid_to": null,
+        "evidence_id": "EV-GRID-1"
+      }
+    },
+    {
+      "event_type": "consumption_recorded",
+      "timestamp": "2026-01-15T09:05:00+00:00",
+      "payload": {
+        "record_id": "R5", "product": "P1", "material": "plastics",
+        "activity": "material_input", "quantity": 20, "unit": "kg",
+        "geography": "CN", "boundary": "CRADLE_TO_GATE",
+        "occurred_on": "2026-03-12", "factor_id": "F-PLASTIC"
+      }
+    },
+    {
+      "event_type": "consumption_recorded",
+      "timestamp": "2026-01-15T09:06:00+00:00",
+      "payload": {
+        "record_id": "R6", "product": "P1", "material": "paint",
+        "activity": "coating", "quantity": 30, "unit": "L",
+        "geography": "CN", "boundary": "COATING",
+        "occurred_on": "2026-03-15", "factor_id": "F-PAINT"
+      }
+    },
+    {
+      "event_type": "evidence_registered",
+      "timestamp": "2025-01-01T00:04:00+00:00",
+      "payload": {
+        "evidence_id": "EV-PAINT-1", "filename": "paint_ecoinvent.pdf",
+        "sha256": "5555555555555555555555555555555555555555555555555555555555555555"
+      }
+    },
+    {
+      "event_type": "factor_version_registered",
+      "timestamp": "2025-01-02T00:04:00+00:00",
+      "payload": {
+        "factor_id": "F-PAINT", "version": 1, "activity": "coating",
+        "material": "paint", "factor_value": 3.0, "factor_unit": "kgCO2e/L",
+        "geography": "CN", "boundary": "CRADLE_TO_GATE",
+        "valid_from": "2025-01-01", "valid_to": "2025-12-31",
+        "evidence_id": "EV-PAINT-1"
+      }
+    },
+    {
+      "event_type": "consumption_recorded",
+      "timestamp": "2026-01-15T09:07:00+00:00",
+      "payload": {
+        "record_id": "R7", "product": "P1", "material": "steel",
+        "activity": "material_input", "quantity": 100, "unit": "kg",
+        "geography": "CN", "boundary": "CRADLE_TO_GATE",
+        "occurred_on": "2026-08-01", "factor_id": "F-STEEL"
+      }
+    },
+    {
+      "event_type": "consumption_recorded",
+      "timestamp": "2026-01-15T09:08:00+00:00",
+      "payload": {
+        "record_id": "R8", "product": "P2", "material": "freight",
+        "activity": "road_freight", "quantity": 200, "unit": "tkm",
+        "geography": "CN", "boundary": "TRANSPORT",
+        "occurred_on": "2025-05-01", "factor_id": "F-TRUCK"
+      }
+    },
+    {
+      "event_type": "consumption_recorded",
+      "timestamp": "2026-01-15T09:09:00+00:00",
+      "payload": {
+        "record_id": "R9", "product": "P2", "material": "freight",
+        "activity": "road_freight", "quantity": 50, "unit": "kWh",
+        "geography": "CN", "boundary": "TRANSPORT",
+        "occurred_on": "2026-01-10", "factor_id": "F-TRUCK"
+      }
+    },
+    {
+      "event_type": "consumption_recorded",
+      "timestamp": "2026-01-15T09:10:00+00:00",
+      "payload": {
+        "record_id": "R10", "product": "P2", "material": "steel",
+        "activity": "material_input", "quantity": 4, "unit": "kg",
+        "geography": "CN", "boundary": "CRADLE_TO_GATE",
+        "occurred_on": "2026-01-11", "factor_id": "F-UNKNOWN"
+      }
+    },
+    {
+      "event_type": "consumption_recorded",
+      "timestamp": "2026-01-15T09:11:00+00:00",
+      "payload": {
+        "record_id": "R11", "product": "P3", "material": "aluminium",
+        "activity": "material_input", "quantity": 10, "unit": "kg",
+        "geography": "CN", "boundary": "CRADLE_TO_GATE",
+        "occurred_on": "2026-02-01", "factor_id": "F-ALU"
+      }
+    },
+    {
+      "event_type": "report_frozen",
+      "timestamp": "2026-10-01T12:00:00+00:00",
+      "payload": {
+        "report_id": "RP1", "product": "P1", "period": "2026-Q1"
+      }
+    },
+    {
+      "event_type": "factor_withdrawn",
+      "timestamp": "2026-09-01T00:00:00+00:00",
+      "payload": {
+        "factor_id": "F-STEEL", "version": 1
+      }
+    },
+    {
+      "event_type": "evidence_registered",
+      "timestamp": "2026-09-02T00:00:00+00:00",
+      "payload": {
+        "evidence_id": "EV-STEEL-1", "filename": "steel_ecoinvent_v1_replaced.pdf",
+        "sha256": "9999999999999999999999999999999999999999999999999999999999999999"
+      }
     }
   ]
 }
